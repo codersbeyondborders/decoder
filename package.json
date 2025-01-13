@@ -20,11 +20,11 @@
     "url-loader": "^4.1.1"
   },
   "scripts": {
-      "build:clean": "rm -rf build && npm run build",
-      "start": "craco start",
-      "build": "craco build",
-      "test": "craco test"
-    },  
+    "build:clean": "rm -rf build && npm run build",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
