@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - npm install --save-dev @babel/plugin-proposal-private-property-in-object
         - npm ci --legacy-peer-deps
     build:
       commands:
