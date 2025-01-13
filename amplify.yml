@@ -9,7 +9,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/plugin-proposal-private-property-in-object
         - npm ci
     build:
       commands:
