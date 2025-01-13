@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import clickSound from "../assets/button-click.mp3";
 
 interface ButtonWithSoundProps {
   children: ReactNode; // For the button text or child elements
@@ -9,8 +8,8 @@ interface ButtonWithSoundProps {
 
 const ButtonWithSound: React.FC<ButtonWithSoundProps> = ({ children, onClick, className }) => {
   const playSound = () => {
-    const audio = new Audio(clickSound);
-    audio.play();
+    const buttonSound = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/button-click.mp3`);
+    buttonSound.play();
   };
 
   const handleClick = () => {

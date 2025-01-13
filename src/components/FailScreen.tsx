@@ -1,5 +1,4 @@
 import React from "react";
-import failImg from "../assets/images/fail.webp";
 import ButtonWithSound from "./ButtonWithSound.tsx";
 
 interface FailScreenProps {
@@ -35,7 +34,7 @@ const FailScreen: React.FC<FailScreenProps> = ({
 
       <div className="my-6">
               <img
-                src={failImg}
+                src={`${process.env.PUBLIC_URL}/assets/images/fail.webp`} 
                 alt="Detective"
                 className="w-40"
               />

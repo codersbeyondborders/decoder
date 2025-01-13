@@ -1,17 +1,3 @@
-import level1Image from "../assets/images/level1.webp";
-import level2Image from "../assets/images/level2.webp";
-import level3Image from "../assets/images/level3.webp";
-import level4Image from "../assets/images/level4.webp";
-import level5Image from "../assets/images/level5.webp";
-import level6Image from "../assets/images/level6.webp";
-import level7Image from "../assets/images/level7.webp";
-import level8Image from "../assets/images/level8.webp";
-import level9Image from "../assets/images/level9.webp";
-import level10Image from "../assets/images/level10.webp";
-import level11Image from "../assets/images/level11.webp";
-import level12Image from "../assets/images/level12.webp";
-import level13Image from "../assets/images/level13.webp";
-
 export const levels = [
   {
     name: "Missing Vowels",
@@ -28,7 +14,7 @@ export const levels = [
       { text: "Focus on vowels only.", coordinates: { top: "35%", left: "60%", width: "25%", height: "25%" } },
     ],
     background: "bg-gray-900",
-    backgroundImage: level1Image,
+    backgroundImage: 'level1.webp',
   },
   {
     name: "Reversed Word",
@@ -45,7 +31,7 @@ export const levels = [
       { text: "Flip the word to decode it.", coordinates: { top: "35%", left: "65%", width: "20%", height: "20%" } },
     ],
     background: "bg-blue-900",
-    backgroundImage: level2Image,
+    backgroundImage: 'level2.webp',
   },
   {
     name: "Swapped with Letter Before",
@@ -60,7 +46,7 @@ export const levels = [
       { text: "Reverse the shift.", coordinates: { top: "70%", left: "60%", width: "30%", height: "10%" } },
     ],
     background: "bg-green-800",
-    backgroundImage: level3Image,
+    backgroundImage: 'level3.webp',
   },
   {
     name: "Swapped Letters",
@@ -77,7 +63,7 @@ export const levels = [
       { text: "The logic is based on Caeser Cipher.", coordinates: { top: "45%", left: "80%", width: "25%", height: "15%" } },
     ],
     background: "bg-black",
-    backgroundImage: level4Image,  
+    backgroundImage: 'level4.webp',
   },
   {
     name: "A is 1, B is 2...",
@@ -92,7 +78,7 @@ export const levels = [
       { text: "Use numeric positions for each letter.", coordinates: { top: "25%", left: "5%", width: "15%", height: "15%" } },
     ],
     background: "bg-yellow-600",
-    backgroundImage: level5Image,
+    backgroundImage: 'level5.webp',
   },
   {
     name: "QWERTY",
@@ -107,7 +93,7 @@ export const levels = [
       { text: "Your keyboard holds the clue.", coordinates: { top: "60%", left: "10%", width: "25%", height: "25%" } },
     ],
     background: "bg-purple-800",
-    backgroundImage: level6Image,
+    backgroundImage: 'level6.webp',
   },
   {
     name: "NATO Codes",
@@ -122,7 +108,7 @@ export const levels = [
       { text: "Decode using military codes.", coordinates: { top: "45%", left: "10%", width: "30%", height: "30%" } },
     ],
     background: "bg-teal-600",
-    backgroundImage: level7Image,
+    backgroundImage: 'level7.webp',
   },
   {
     name: "Country Flags",
@@ -137,7 +123,7 @@ export const levels = [
       { text: "Look for unique country flags.", coordinates: { top: "20%", left: "65%", width: "12%", height: "30%" } },
     ],
     background: "bg-gray-700",
-    backgroundImage: level8Image,
+    backgroundImage: 'level8.webp',
   },
   {
     name: "Decode the Secret Message with Tap Code",
@@ -161,7 +147,7 @@ export const levels = [
       },
     ],
     background: "bg-gray-800",
-    backgroundImage: level9Image,  
+    backgroundImage: 'level9.webp',
   },
 
   {
@@ -186,7 +172,7 @@ export const levels = [
       },
     ],
     background: "bg-gray-900",
-    backgroundImage: level10Image,  
+    backgroundImage: 'level10.webp',
   },
   {
     name: "Decode the Secret Message with Zigzag Cipher",
@@ -210,7 +196,7 @@ export const levels = [
       },
     ],
     background: "bg-gray-800",
-    backgroundImage: level11Image,
+    backgroundImage: 'level11.webp',
   },
   {
     name: "Morse Code",
@@ -225,7 +211,7 @@ export const levels = [
       { text: "Focus on timing of dots and dashes.", coordinates: { top: "20%", left: "5%", width: "20%", height: "40%" } },
     ],
     background: "bg-red-800",
-    backgroundImage: level12Image,
+    backgroundImage: 'level12.webp',
   },
   {
     name: "Braille",
@@ -240,7 +226,7 @@ export const levels = [
       { text: "Each pattern character maps uniquely and can be felt.", coordinates: { top: "25%", left: "5%", width: "25%", height: "30%" } },
     ],
     background: "bg-indigo-600",
-    backgroundImage: level13Image,
+    backgroundImage: 'level13.webp',
   },
 ];
 function alphaToNumCipher(message: string) {

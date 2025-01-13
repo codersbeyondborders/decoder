@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import ButtonWithSound from "./ButtonWithSound.tsx";
-import backgroundMusicFile from "../assets/game-music.mp3";
-
 interface FinalScreenProps {
   score: number;
   onPlayAgain: () => void;
@@ -10,7 +8,7 @@ interface FinalScreenProps {
 const FinalScreen: React.FC<FinalScreenProps> = ({ score, onPlayAgain }) => {
 
   useEffect(() => {
-    const backgroundMusic = new Audio(backgroundMusicFile);
+    const backgroundMusic = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/game-music.mp3`);
     backgroundMusic.volume = 0.3;
     backgroundMusic.loop = true; 
     backgroundMusic.play().catch((err) => console.error("Audio Error:", err));

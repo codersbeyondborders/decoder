@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { levels } from "../shared/levels.ts";
-import hintSound from "../assets/hint.mp3";
 
 export type Screen =
   | "start"
@@ -57,8 +56,7 @@ export const useGameLogic = () => {
 
   // Handle hint usage
   const useHint = (index: number) => {
-     
-      const hintUsedSound = new Audio(`${hintSound}`);
+      const hintUsedSound = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/hint.mp3`);
       hintUsedSound.volume = 0.1;
       hintUsedSound.play();
       const updatedHints = [...hintsUsed];

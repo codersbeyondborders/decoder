@@ -1,5 +1,4 @@
 import React from "react";
-import homeImg from "../assets/images/start.webp";
 import ButtonWithSound from "./ButtonWithSound.tsx";
 
 interface HomeScreenProps {
@@ -24,8 +23,8 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ onStartGame, onHowToPlay }) => 
 
         <div className="my-4">
           <img
-            src={homeImg}
-            alt="Detective"
+            src={`${process.env.PUBLIC_URL}/assets/images/start.webp`} 
+            alt="Starting Game"
             className="w-40 mx-auto"
           />
         </div>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ButtonWithSound from "./ButtonWithSound.tsx";
-import typingSound from "../assets/typing.mp3"; // Ensure this path is correct
 
 interface MissionBriefingProps {
   missionTitle: string;
@@ -20,8 +19,7 @@ const MissionBriefing: React.FC<MissionBriefingProps> = ({
 
   useEffect(() => {
     let currentCharIndex = 0;
-    const audio = new Audio(typingSound);
-
+    const audio = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/typing.mp3`);
     const typeText = () => {
       if (currentCharIndex <= missionDescription.length) {
         // Safely update the typedText state with the substring

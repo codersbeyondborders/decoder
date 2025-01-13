@@ -1,5 +1,5 @@
 {
-  "name": "lab-of-secrets",
+  "name": "Decoder-Game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,11 +20,11 @@
     "url-loader": "^4.1.1"
   },
   "scripts": {
-      "start": "craco start",
-      "build": "craco build",
-      "test": "craco test",
-      "eject": "react-scripts eject"
-    },
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
