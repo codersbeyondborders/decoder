@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonWithSound from "./ButtonWithSound.tsx";
-
+import successImage from "../assets/images/success.webp";
 interface SuccessScreenProps {
   score: number;
   currentLevel: number;
@@ -23,7 +23,7 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({
       <p className="text-xl mb-2">Your Score: {score}</p>
       <div className="my-6">
         <img
-          src={`${process.env.PUBLIC_URL}/static/media/success.webp`} 
+          src={`${successImage}`} 
           alt="Detective"
           className="w-40"
         />

@@ -14,6 +14,9 @@ import FinalScreen from "./components/FinalScreen.tsx";
 import { useGameLogic } from "./hooks/useGameLogic.ts";
 import { levels } from "./shared/levels.ts";
 import "./index.css";
+import levelCompleteSound from "./assets/sounds/level-complete.mp3";
+import failSound from "./assets/sounds/fail.mp3";
+import buttonSound from "./assets/sounds/button-click.mp3";
 
 Amplify.configure(config);
 
@@ -68,7 +71,7 @@ const App: React.FC = () => {
   };
 
   const handleLevelComplete = () => {
-    const gameplaySound = new Audio(`${process.env.PUBLIC_URL}/static/media/level-complete.mp3`);
+    const gameplaySound = new Audio(levelCompleteSound);
     gameplaySound.volume = 0.1;
     gameplaySound.play().catch(error => console.log('Audio playback failed', error));
 
@@ -80,7 +83,7 @@ const App: React.FC = () => {
   };
 
   const handleFail = (isTimeout: boolean) => {
-    const gameoverSound = new Audio(`${process.env.PUBLIC_URL}/static/media/fail.mp3`);
+    const gameoverSound = new Audio(failSound);
     gameoverSound.volume = 0.1;
     gameoverSound.play().catch(error => console.log('Audio playback failed', error));
     navigateTo("fail");
@@ -95,7 +98,7 @@ const App: React.FC = () => {
       {currentScreen === "start" && (
         <HomeScreen
           onStartGame={() => {
-            const btnSound = new Audio(`${process.env.PUBLIC_URL}/static/media/button-click.mp3`);
+            const btnSound = new Audio(buttonSound);
             btnSound.volume = 0.5;
             btnSound.play().catch(error => console.log('Audio playback failed', error));
             navigateTo("loading")

@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonWithSound from "./ButtonWithSound.tsx";
-
+import startImage from "../assets/images/start.webp";
 interface HomeScreenProps {
   onStartGame: () => void;
   onHowToPlay: () => void;
@@ -23,7 +23,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ onStartGame, onHowToPlay }) => 
 
         <div className="my-4">
           <img
-            src={`${process.env.PUBLIC_URL}/static/media/start.webp`} 
+            src={`${startImage}`} 
             alt="Starting Game"
             className="w-40 mx-auto"
           />

@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonWithSound from "./ButtonWithSound.tsx";
-
+import failImage from "../assets/images/fail.webp";
 interface FailScreenProps {
   score: number;
   currentLevel: number;
@@ -34,7 +34,7 @@ const FailScreen: React.FC<FailScreenProps> = ({
 
       <div className="my-6">
               <img
-                src={`${process.env.PUBLIC_URL}/static/media/fail.webp`} 
+                src={`${failImage}`} 
                 alt="Detective"
                 className="w-40"
               />
