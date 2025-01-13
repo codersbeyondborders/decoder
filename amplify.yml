@@ -1,10 +1,16 @@
 version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - "# Execute Amplify CLI with the helper script"
+        - amplifyPush --simple
 frontend:
   phases:
     preBuild:
       commands:
-        - npm install --save-dev @babel/plugin-proposal-private-property-in-object
-        - npm ci --legacy-peer-deps
+        - npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/plugin-proposal-private-property-in-object
+        - npm ci
     build:
       commands:
         - npm run build
