@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonWithSound from "./ButtonWithSound.tsx";
-import successImg from "../assets/success.png";
+import successImg from "../assets/images/success.webp";
 
 interface SuccessScreenProps {
   score: number;

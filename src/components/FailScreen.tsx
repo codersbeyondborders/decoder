@@ -1,5 +1,5 @@
 import React from "react";
-import failImg from "../assets/fail.png";
+import failImg from "../assets/images/fail.webp";
 import ButtonWithSound from "./ButtonWithSound.tsx";
 
 interface FailScreenProps {

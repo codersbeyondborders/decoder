@@ -71,9 +71,9 @@ const App: React.FC = () => {
   };
 
   const handleLevelComplete = () => {
-    const gameplaySound = new Audio(`${successSound}`);
+    const gameplaySound = new Audio(successSound);
     gameplaySound.volume = 0.1;
-    gameplaySound.play();
+    gameplaySound.play().catch(error => console.log('Audio playback failed', error));
 
     if (currentLevel >= 13) {
       navigateTo("final-loading");
@@ -83,9 +83,9 @@ const App: React.FC = () => {
   };
 
   const handleFail = (isTimeout: boolean) => {
-    const gameoverSound = new Audio(`${failSound}`);
+    const gameoverSound = new Audio(failSound);
     gameoverSound.volume = 0.1;
-    gameoverSound.play();
+    gameoverSound.play().catch(error => console.log('Audio playback failed', error));
     navigateTo("fail");
   };
 
@@ -98,10 +98,9 @@ const App: React.FC = () => {
       {currentScreen === "start" && (
         <HomeScreen
           onStartGame={() => {
-            const btnSound = new Audio(`${buttonSound}`);
+            const btnSound = new Audio(buttonSound);
             btnSound.volume = 0.5;
-            btnSound.play();
-
+            btnSound.play().catch(error => console.log('Audio playback failed', error));
             navigateTo("loading")
             }
           }
