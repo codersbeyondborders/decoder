@@ -3,7 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install -g @craco/craco typescript @typescript-eslint/parser
         - npm ci --legacy-peer-deps
     build:
       commands:
