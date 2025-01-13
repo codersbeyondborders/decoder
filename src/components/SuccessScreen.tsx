@@ -23,7 +23,7 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({
       <p className="text-xl mb-2">Your Score: {score}</p>
       <div className="my-6">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/success.webp`} 
+          src={`${process.env.PUBLIC_URL}/static/media/success.webp`} 
           alt="Detective"
           className="w-40"
         />

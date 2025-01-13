@@ -19,7 +19,7 @@ const MissionBriefing: React.FC<MissionBriefingProps> = ({
 
   useEffect(() => {
     let currentCharIndex = 0;
-    const audio = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/typing.mp3`);
+    const audio = new Audio(`${process.env.PUBLIC_URL}/static/media/typing.mp3`);
     const typeText = () => {
       if (currentCharIndex <= missionDescription.length) {
         // Safely update the typedText state with the substring

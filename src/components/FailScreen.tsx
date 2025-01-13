@@ -34,7 +34,7 @@ const FailScreen: React.FC<FailScreenProps> = ({
 
       <div className="my-6">
               <img
-                src={`${process.env.PUBLIC_URL}/assets/images/fail.webp`} 
+                src={`${process.env.PUBLIC_URL}/static/media/fail.webp`} 
                 alt="Detective"
                 className="w-40"
               />

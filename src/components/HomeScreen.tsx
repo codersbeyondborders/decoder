@@ -23,7 +23,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ onStartGame, onHowToPlay }) => 
 
         <div className="my-4">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/start.webp`} 
+            src={`${process.env.PUBLIC_URL}/static/media/start.webp`} 
             alt="Starting Game"
             className="w-40 mx-auto"
           />

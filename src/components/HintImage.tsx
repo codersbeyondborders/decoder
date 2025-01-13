@@ -12,7 +12,7 @@ const HintImage: React.FC<HintImageProps> = ({ backgroundImage, onUseHint, hints
     <div
       className="relative bg-cover bg-center shadow-lg"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${backgroundImage})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/static/media/${backgroundImage})`,
         width: "100%", 
         height: "100%",
         backgroundPosition: "center",

@@ -8,7 +8,7 @@ interface ButtonWithSoundProps {
 
 const ButtonWithSound: React.FC<ButtonWithSoundProps> = ({ children, onClick, className }) => {
   const playSound = () => {
-    const buttonSound = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/button-click.mp3`);
+    const buttonSound = new Audio(`${process.env.PUBLIC_URL}/static/media/button-click.mp3`);
     buttonSound.play();
   };
 

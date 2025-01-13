@@ -68,7 +68,7 @@ const App: React.FC = () => {
   };
 
   const handleLevelComplete = () => {
-    const gameplaySound = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/level-complete.mp3`);
+    const gameplaySound = new Audio(`${process.env.PUBLIC_URL}/static/media/level-complete.mp3`);
     gameplaySound.volume = 0.1;
     gameplaySound.play().catch(error => console.log('Audio playback failed', error));
 
@@ -80,7 +80,7 @@ const App: React.FC = () => {
   };
 
   const handleFail = (isTimeout: boolean) => {
-    const gameoverSound = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/fail.mp3`);
+    const gameoverSound = new Audio(`${process.env.PUBLIC_URL}/static/media/fail.mp3`);
     gameoverSound.volume = 0.1;
     gameoverSound.play().catch(error => console.log('Audio playback failed', error));
     navigateTo("fail");
@@ -95,7 +95,7 @@ const App: React.FC = () => {
       {currentScreen === "start" && (
         <HomeScreen
           onStartGame={() => {
-            const btnSound = new Audio(`${process.env.PUBLIC_URL}/assets/sounds/button-click.mp3`);
+            const btnSound = new Audio(`${process.env.PUBLIC_URL}/static/media/button-click.mp3`);
             btnSound.volume = 0.5;
             btnSound.play().catch(error => console.log('Audio playback failed', error));
             navigateTo("loading")
